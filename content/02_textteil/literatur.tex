@@ -77,7 +77,13 @@ Räumliche Eigenschaften lassen sich gemäss Chen et al. in \textbf{punktebasier
 \textbf{Regionalbasierte Visualisierungen} erlauben es gemäss Chen et al. Makro-Patterns in Verkehrsdaten zu visualisieren, beispielsweise wie sich die Zugverspätungen pro Region unterscheiden. Sie sind jedoch nicht geeignet, um Mikro-Patterns von einzelnen Zügen zu visualisieren \parencite[S. 2976]{survey_traffic_data_visualization_2015}.
 
 \section{Erkennung von visuellen Mustern}
-TODO
+Nebst den bereits besprochenen Methoden wie Edge Bundling und dem \acrshort{kde} Algorithmus existieren noch andere Möglichkeiten, um visuelle Muster eines Verkehrsdatensatzes hervorzuheben. Eine bekannte Vorgehensweise aus dem Bereich Data-Mining, um visuelle Muster zu identifizieren, ist das Clustering. Lopez et al. untersuchten während 35 Tagen die Verkehrsdaten von Amsterdam. Mithilfe des K-Means, DBSCAN sowie weiteren Cluster Algorithmen konnten sie 9 verschiedene Cluster für das Verkehrsverhalten identifizieren \parencite{lopez_2017}. Toshniwal et al. nutzten ebenfalls verschiedene Clusteralgorithmen, um Muster im Stadtverkehr von Aarthus (Dänemark) zu identifizieren. Mithilfe von Sensoren an spezifischen Ortschaften wurde die Anzahl der vorbeifahrenden Fahrzeuge ermittelt. Die Daten wurden anschliessend entsprechend aggregiert (Minuten, Stunden etc.). Für die Analyse des zeitlichen als auch räumlichen Verhaltens wurden diverse Cluster-Algorithmen verwendet. Für das \textbf{zeitliche} Verhalten wurde der DBSCAN Algorithmus verwendet. Für das \textbf{räumliche} Verhalten wurde unter anderem ein hierarchisches Clustering (Agglomerative Nesting) verwendet (siehe Abbildung \ref{fig_clustering_urban_traffic}).
+
+\begin{figure}[H]
+    \caption{Cluster-Algorithmen gemäss Toshinwal et al. \parencite[S. 1050]{clustering_urban_traffic_data}}
+    \includegraphics[width=.5\linewidth]{content/00_assets/urban_traffic_clustering_methods.png}
+    \label{fig_clustering_urban_traffic}
+\end{figure}
 
 \section{Grafstrukturen}
 TODO
