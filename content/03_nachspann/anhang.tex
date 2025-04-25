@@ -1,17 +1,5 @@
 \chapter{Anhang}
 
-
-
-\section{Zeitplan}
-\label{attachment:zeitplan}
-\begin{figure}[H]
-    \caption{Zeitplan (eigene Darstellung)}
-    \includegraphics[width=1.0\linewidth, angle=90]{content/00_assets/meilensteine_gantt_diagram.png}
-    \label{fig_zeitplan}
-\end{figure}
-
-\newpage
-
 \section{Code zur Generierung des Zeitplans}
 Der Zeitplan wurde mithilfe von Mermaid\footnote{\url{https://mermaid.js.org/}} erstellt. Hierzu wurde folgender Code genutzt:
 
@@ -42,7 +30,7 @@ gantt
         Visuelle Muster mithilfe des VA-Tools explorieren :visuelle_muster_va_tool, after abschluss_backend, until abschluss_anwendung_va_tool
         Forschungsfragen mithilfe des VA-Tools beantworten :forschungsfragen_beantworten_va_tool, after abschluss_backend, until abschluss_anwendung_va_tool
         Abschluss Anwendung VA-Tool :milestone, abschluss_anwendung_va_tool, 29-06-2025, 0d
-    section Performance Analyse und Verbeseerung des VA-Tool
+    section Performance Analyse und Verbesserung des VA-Tool
         Performance Messung VA-Tool durchführen :performance_messung_va_tool, after abschluss_anwendung_va_tool, 2d
         Verbesserung Performance VA-Tool :performance_verbesserung_va_tool, after performance_messung_va_tool, until performance_verbesserung_va_tool_abschluss
         Abschluss Performance  VA-Tool :milestone, performance_verbesserung_va_tool_abschluss, 13-07-2025, 0d
